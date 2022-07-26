@@ -79,8 +79,8 @@ public struct JWT: Codable, JWTCreatable {
         }
     }
 
-    typealias Token = String
-    typealias P8PrivateKey = String
+    public typealias Token = String
+    public typealias P8PrivateKey = String
 
     typealias DateProvider = () -> Date
     static let defaultDateProvider: DateProvider = {
