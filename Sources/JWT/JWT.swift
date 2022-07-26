@@ -46,7 +46,7 @@ private struct Payload: Codable {
 }
 
 public protocol JWTCreatable {
-    func signedToken(using privateKey: JWT.P8PrivateKey) throws -> JWT.Token
+    public func signedToken(using privateKey: JWT.P8PrivateKey) throws -> JWT.Token
 }
 
 public struct JWT: Codable, JWTCreatable {
