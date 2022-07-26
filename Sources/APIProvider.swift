@@ -107,7 +107,7 @@ public final class APIProvider {
     private let configuration: APIConfiguration
 
     /// The authenticator to handle all JWT signing related actions.
-    private let requestsAuthenticator: JWTRequestsAuthenticator
+    public let requestsAuthenticator: JWTRequestsAuthenticator
 
     /// Handles URLRequest execution
     private let requestExecutor: RequestExecutor
