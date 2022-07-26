@@ -45,11 +45,11 @@ private struct Payload: Codable {
     let audience: String = "appstoreconnect-v1"
 }
 
-protocol JWTCreatable {
+public protocol JWTCreatable {
     func signedToken(using privateKey: JWT.P8PrivateKey) throws -> JWT.Token
 }
 
-struct JWT: Codable, JWTCreatable {
+public struct JWT: Codable, JWTCreatable {
 
     public enum Error: Swift.Error, LocalizedError {
 
