@@ -10,7 +10,7 @@ import Foundation
 /// An Authenticator for URL Requests which makes use of the RequestAdapter from Alamofire.
 final class JWTRequestsAuthenticator {
 
-    var cachedToken: JWT.Token?
+    public var cachedToken: JWT.Token?
     private let apiConfiguration: APIConfiguration
 
     /// The JWT Creator to use for creating the JWT token. Can be overriden for test use cases.
